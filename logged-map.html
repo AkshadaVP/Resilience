@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resilience-An All Rounder Website</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+ 
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+  <style>
+      body{
+          margin: 0;
+      }
+      #map{
+          width: 100%;
+          height: 88vh;
+      }
+  </style>
+  <script src="js/map.js" defer></script>
+</head>
+<body>
+<section class="sec">
+<div class="wrapper">
+    <div class="sidebar">
+      <a href="home.html"><img src="images/logo.png" class="logo"></a>
+        <ul>
+            <li ><a href="logged-home.html"><img src="images/home.png"><p>Home</p></a></li>
+            <li><a href="logged-food.HTML"><img src="images/foods.png"><p>Food Order</p></a></li>
+            <li><a href="logged-hotel.HTML"><img src="images/hotels.png"><p>Hotel Booking</p></a></li>
+            <li class="active"><a href="logged-map.html"><img src="images/maps.png"><p>Google Maps</p></a></li>
+            <li><a href="map.html"><img src="images/logout.png"><p>LogOut</p></a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header">
+          <a href="home.html"><h2>Resilience</h2></a>
+          <div class="container">
+            <div class="top-icons">
+                <div class="toggle"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="info">
+          <div id='map' ></div>
+      </div>
+    </div>
+</div>
+</section>
+   <!---------Cursor Style--------->
+</body>
+</html>

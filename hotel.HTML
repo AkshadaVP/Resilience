@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESILIENCE - Hotel Booking Website </title>
+
+    <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/hotel.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<section class="sec">
+    <div class="wrapper">
+        <div class="sidebar">
+          <a href="home.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="home.html"><img src="images/home.png"><p>Home</p></a></li>
+                <li><a href="food.HTML"><img src="images/foods.png"><p>Food Order</p></a></li>
+                <li class="active"><a href="hotel.HTML"><img src="images/hotels.png"><p>Hotel Booking</p></a></li>
+                <li><a href="map.html"><img src="images/maps.png"><p>Google Maps</p></a></li>
+                <li><a href="login.html"><img src="images/login.png"><p>Login</p></a></li>
+            </ul> 
+            <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header"><h2>RESILIENCE</h2>
+              <div class="container">
+                <div class="top-icons">
+                    <div class="toggle"></div>
+                </div>
+              </div>
+            </div>  
+          
+            <section class="home" id="home">
+                <div class="head_container">
+                  <div class="box">
+                    <div class="text">
+                      <h1>HOTELS, RESORTS, HOSTELS & MORE</h1>
+                      <p>Get the best prices on 2,000,000+ properties, worldwide </p>
+                      <button>MORE INFO</button>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="images/home1.jpg" class="slide">
+                  </div>
+                  <div class="image_item">
+                    <img src="images/home1.jpg" alt="nashik" class="slide active" onclick="img('images/home1.jpg')"><div class="city">Nashik</div> </img>
+                    <img src="images/home2.jpg" alt="" class="slide" onclick="img('images/home2.jpg')"><div class="city">Pune</div> </img>
+                    <img src="images/home3.jpg" alt="" class="slide" onclick="img('images/home3.jpg')"><div class="city">Mumbai</div> </img>
+                    <img src="images/home4.jpg" alt="" class="slide" onclick="img('images/home4.jpg')"><div class="city">Banglore</div> </img>
+                  </div>
+                </div>
+              </section>
+              <script>
+                function img(anything) {
+                  document.querySelector('.slide').src = anything;
+                }
+            
+                function change(change) {
+                  const line = document.querySelector('.images');
+                  line.style.background = change;
+                }
+              </script>
+              <section class="book">
+                <div class="container flex">
+                  <div class="input grid">
+                    <div class="box">
+                      <label>Check-in:</label>
+                      <input type="date" placeholder="Check-in-Date">
+                    </div>
+                    <div class="box">
+                      <label>Check-out:</label>
+                      <input type="date" placeholder="Check-out-Date">
+                    </div>
+                    <div class="box">
+                      <label>Adults:</label> <br>
+                      <input type="number" placeholder="0">
+                    </div>
+                    <div class="box">
+                      <label>Children:</label> <br>
+                      <input type="number" placeholder="0">
+                    </div>
+                  </div>
+                  <div class="search">
+                    <input type="submit" value="SEARCH">
+                  </div>
+                </div>
+              </section>
+            
+    
+    </div>
+</div>
+</section>
+
+ <!---------theme Style--------->
+            <script type="text/javascript" src="script.JS"></script>
+</body>
+</html>

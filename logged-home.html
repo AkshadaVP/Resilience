@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resilience-An All Rounder Website</title>
+	<link rel="stylesheet" href="css/home.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<body>
+<section class="sec">
+<div class="wrapper">
+    <div class="sidebar">
+      <a href="home.html"><img src="images/logo.png" class="logo"></a>
+        <ul>
+            <li class="active"><a href="logged-home.html"><img src="images/home.png"><p>Home</p></a></li>
+            <li><a href="logged-food.HTML"><img src="images/foods.png"><p>Food Order</p></a></li>
+            <li><a href="logged-hotel.HTML"><img src="images/hotels.png"><p>Hotel Booking</p></a></li>
+            <li><a href="logged-map.html"><img src="images/maps.png"><p>Google Maps</p></a></li>
+            <li><a href="home.html"><img src="images/logout.png"><p>LogOut</p></a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><h2>Resilience</h2>
+          <div class="container">
+            <div class="top-icons">
+                <div class="toggle"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="info">
+          <div class="mmm">
+            <h2>1 Step Solution For <span></span></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <a href="login.html" class="explore">Explore More</a>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+   <!---------Cursor Style--------->
+   <div id="cursor"></div>
+   <script>
+       var cursor = document.getElementById("cursor");
+       document.onmousemove = function(e){
+           cursor.style.left = (e.pageX - 25)+"px";
+           cursor.style.top = (e.pageY -25)+"px";
+           cursor.style.display = "block";
+       }
+   </script>
+
+   <script>
+       let sec = document.querySelector('.sec');
+       let toggle = document.querySelector('.toggle');
+       toggle.onclick = function(){
+           sec.classList.toggle('dark')
+       }
+   </script>
+</body>
+</html>

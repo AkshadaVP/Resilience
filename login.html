@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resilience-Login Page</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<body>
+
+  <section class="sec">
+    <div class="wrapper">
+        <div class="sidebar">
+          <a href="home.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="home.html"><img src="images/home.png"><p>Home</p></a></li>
+                <li><a href="food.HTML"><img src="images/foods.png"><p>Food Order</p></a></li>
+                <li><a href="hotel.HTML"><img src="images/hotels.png"><p>Hotel Booking</p></a></li>
+                <li><a href="map.html"><img src="images/maps.png"><p>Google Maps</p></a></li>
+                <li class="active"><a href="login.html"><img src="images/login.png"><p>Login</p></a></li>
+            </ul> 
+            <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header"><h2>RESILIENCE</h2>
+              <div class="container">
+                <div class="top-icons">
+                    <div class="toggle"></div>
+                </div>
+              </div>
+            </div>  
+          
+          <main>
+            <div class="artwork">
+              <img src="images/rocket-frame.svg" class="rocket">
+            </div>
+            <form autocomplete="off">
+              <h1>Sign In</h1>
+        
+              <label>
+                Username
+                <input type="text" class="has-icon icon-username">
+              </label>
+              
+              <label>
+                Password
+                <input type="password" class="has-icon icon-password">
+              </label>
+        
+              <label>
+                <input type="checkbox">
+                Remember me
+              </label>
+        
+              <a href="logged-home.html" id="link" class="button login">Login</a>
+        
+              <a href="#" class="small">Forgot password?</a>
+            </form>
+            <div class="transition"></div>
+          </main>
+    
+    </div>
+</div>
+</section>
+<script>
+ var url = document.getElementById('link');
+
+url.addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    console.log("url clicked...")
+
+    setTimeout(() =>{
+        window.location.href = "logged-home.html";
+        console.log("timeout executed...")
+    }, 1700);
+});
+</script>
+ <!---------theme Style--------->
+            <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
